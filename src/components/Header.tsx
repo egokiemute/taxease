@@ -22,7 +22,7 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="px-3 py-2 border-[1px] rounded-full text-xs font-medium"
+          className="px-3 py-2  text-md text-[#1877F2] font-semibold"
         >
           Penless.co
         </Link>
@@ -33,23 +33,23 @@ const Header = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-2 bg-neutral-100 border-[1px] rounded-full text-xs font-medium"
+            className="px-3 py-2 bg-white border-[1px] border-[#1877F2] rounded-full text-xs font-medium"
           >
             Share with Friends
           </Link>
-          <Link
+          {/* <Link
             href="https://github.com/egokiemute"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-2 bg-[#CAF695] text-black border-[#CAF695] border-[1px] rounded-full text-xs font-medium"
+            className="px-3 py-2 bg-[#1877F2] text-white border-[#1877F2] border-[1px] rounded-full text-xs font-medium"
           >
             Built by Okiemute
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Icon */}
         <button
-          className="sm:hidden p-2 rounded-md border border-gray-200"
+          className="sm:hidden p-2 rounded-md border border-[#1877F2]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -71,7 +71,7 @@ const Header = () => {
             href="https://github.com/egokiemute"
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-3 py-2 bg-[#CAF695] text-black border-[#CAF695] border-[1px] rounded-full text-xs font-medium text-center"
+            className="block px-3 py-2 bg-[#1877F2] text-black border-[#1877F2] border-[1px] rounded-full text-xs font-medium text-center"
           >
             Built by Okiemute
           </Link>

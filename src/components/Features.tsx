@@ -59,7 +59,7 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 bg-[#CAF695] rounded-2xl hover:shadow-sm transition"
+              className="p-6 bg-[#1877F2] rounded-2xl hover:shadow-sm transition"
               data-aos="zoom-in"
               data-aos-delay={index * 150} // stagger effect
             >
@@ -67,7 +67,7 @@ export default function Features() {
               <h3 className="text-xl font-semibold text-gray-900">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-gray-600">{feature.description}</p>
+              <p className="mt-2 text-gray-800">{feature.description}</p>
             </div>
           ))}
         </div>

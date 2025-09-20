@@ -89,7 +89,7 @@ export default function Page() {
       <Header />
       <div className="content-container pt-10 pb-20">
         <div
-          className="max-w-3xl mx-auto p-6 bg-white rounded-2xl border border-[#CAF695] mt-12 shadow-sm"
+          className="max-w-3xl mx-auto p-6 bg-white rounded-2xl border border-[#1877F2] mt-12 shadow-sm"
           data-aos="fade-up"
         >
           <h1 className="text-2xl font-semibold mb-4 text-gray-900">
@@ -112,7 +112,7 @@ export default function Page() {
                 type="number"
                 value={monthlySalary}
                 onChange={(e) => setMonthlySalary(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#CAF695] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
               />
             </label>
 
@@ -124,7 +124,7 @@ export default function Page() {
                 type="number"
                 value={sideIncomeAnnual}
                 onChange={(e) => setSideIncomeAnnual(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#CAF695] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
               />
             </label>
 
@@ -134,7 +134,7 @@ export default function Page() {
                 type="number"
                 value={annualRent}
                 onChange={(e) => setAnnualRent(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#CAF695] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
               />
             </label>
 
@@ -146,7 +146,7 @@ export default function Page() {
                 type="number"
                 value={pension}
                 onChange={(e) => setPension(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#CAF695] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
               />
             </label>
 
@@ -158,7 +158,7 @@ export default function Page() {
                 type="number"
                 value={otherDeductions}
                 onChange={(e) => setOtherDeductions(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#CAF695] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
               />
             </label>
           </div>
@@ -169,7 +169,7 @@ export default function Page() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div className="p-4 bg-[#f9fdf7] rounded-xl border border-gray-200">
+            <div className="p-4 bg-[#f7fafd] rounded-xl border border-gray-200">
               <h3 className="text-sm font-semibold text-gray-700">
                 Income Summary
               </h3>
@@ -201,7 +201,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="p-4 bg-[#f9fdf7] rounded-xl border border-gray-200">
+            <div className="p-4 bg-[#f7fafd] rounded-xl border border-gray-200">
               <h3 className="text-sm font-semibold text-gray-700">Net & Tax</h3>
               <div className="mt-3 text-sm text-gray-800 space-y-2">
                 <div className="flex justify-between">
@@ -283,7 +283,7 @@ export default function Page() {
                 navigator.clipboard.writeText(csv);
                 alert("Summary copied to clipboard (CSV)");
               }}
-              className="px-4 py-2 bg-[#34ad0c] text-white text-sm rounded-full shadow hover:bg-[#2e940b] transition"
+              className="px-4 py-2 bg-[#1877F2] text-white text-sm rounded-full shadow hover:bg-[#2e940b] transition"
             >
               Copy summary (CSV)
             </button>

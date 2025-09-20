@@ -17,13 +17,13 @@ export default function Hero() {
     <section className="py-20 pt-32 flex flex-col items-center justify-center text-center">
       {/* Badge */}
       <div
-        className="flex items-center gap-2 bg-[#CAF695] rounded-full px-4 py-2 w-fit"
+        className="flex items-center gap-2 bg-[#1877F2] rounded-full px-4 py-2 w-fit"
         data-aos="fade-down"
       >
         <span className="flex items-center justify-center bg-[#000000] text-white px-2 py-0.5 text-xs rounded-full">
           New
         </span>
-        <p className="font-twk text-sm font-medium text-[#545454]">
+        <p className="font-twk text-sm font-medium text-[#000]">
           Tax Calculation
         </p>
       </div>
@@ -50,7 +50,7 @@ export default function Hero() {
       {/* CTA */}
       <Link
         href="/calculate"
-        className="mt-6 px-5 py-3 bg-[#CAF695] text-black border-[#CAF695] border-[1px] rounded-full text-sm font-medium"
+        className="mt-6 px-5 py-3 bg-[#1877F2] text-black border-[#1877F2] border-[1px] rounded-full text-sm font-medium"
         data-aos="zoom-in"
         data-aos-delay="300"
       >
