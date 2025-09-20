@@ -17,10 +17,10 @@ export default function Hero() {
     <section className="py-20 pt-32 flex flex-col items-center justify-center text-center">
       {/* Badge */}
       <div
-        className="flex items-center gap-2 bg-[#d6f4e5] rounded-full px-4 py-2 w-fit"
+        className="flex items-center gap-2 bg-[#CAF695] rounded-full px-4 py-2 w-fit"
         data-aos="fade-down"
       >
-        <span className="flex items-center justify-center bg-[#54d295] text-white px-2 py-0.5 text-xs rounded-full">
+        <span className="flex items-center justify-center bg-[#000000] text-white px-2 py-0.5 text-xs rounded-full">
           New
         </span>
         <p className="font-twk text-sm font-medium text-[#545454]">
