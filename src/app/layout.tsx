@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Container from "@/components/commons/Container";
+import { Analytics } from "@vercel/analytics/next";
 
 // ✅ Load DM Sans
 const dmSans = DM_Sans({
@@ -56,7 +57,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -66,6 +66,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmSans.variable} font-sans antialiased`}>
         <Container>{children}</Container>
+        <Analytics />
       </body>
     </html>
   );
