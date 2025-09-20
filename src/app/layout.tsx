@@ -12,11 +12,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Nigeria 2025 Tax Calculator | Estimate Your Income Tax & Net Pay",
+  title: "Nigeria 2026 Tax Calculator | Estimate Your Income Tax & Net Pay",
   description:
-    "Free Nigeria 2025 tax calculator. Instantly estimate your income tax, deductions, and net salary. Stay informed with the latest tax reform updates.",
+    "Free Nigeria 2026 tax calculator. Instantly estimate your income tax, deductions, and net salary. Stay informed with the latest tax reform updates.",
   keywords: [
-    "Nigeria tax calculator 2025",
+    "Nigeria tax calculator 2026",
     "Nigeria income tax",
     "Nigeria tax reform 2025",
     "salary calculator Nigeria",
