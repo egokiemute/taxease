@@ -7,7 +7,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Your website URL
-  const siteUrl = "https://taxease-swart.vercel.app/";
+  const siteUrl = "https://penless.co/";
 
   // WhatsApp share message
   const shareText = encodeURIComponent(
@@ -24,7 +24,7 @@ const Header = () => {
           href="/"
           className="px-3 py-2 border-[1px] rounded-full text-xs font-medium"
         >
-          TaxEase
+          Penless.co
         </Link>
 
         {/* Desktop Nav */}
