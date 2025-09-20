@@ -1,19 +1,13 @@
 "use client";
-import { useContinueStore } from "@/hooks/use-continue-store";
-import useUploadDataStore from "@/hooks/use-upload-data";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-type Props = {};
-
-const Header = (props: Props) => {
-  const { onOpenContinuos } = useContinueStore();
-  const { entries } = useUploadDataStore();
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Your website URL
-  const siteUrl = "https://taxease.ng";
+  const siteUrl = "https://taxease.vercel.app";
 
   // WhatsApp share message
   const shareText = encodeURIComponent(
