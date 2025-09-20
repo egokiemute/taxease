@@ -7,7 +7,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Your website URL
-  const siteUrl = "https://taxease.vercel.app";
+  const siteUrl = "https://taxease-swart.vercel.app/";
 
   // WhatsApp share message
   const shareText = encodeURIComponent(
