@@ -7,11 +7,13 @@ import "aos/dist/aos.css";
 import EncircoBanner from "@/components/EncircoBanner";
 
 export default function Page() {
-  const [monthlySalary, setMonthlySalary] = useState(350000);
-  const [sideIncomeAnnual, setSideIncomeAnnual] = useState(300000);
-  const [annualRent, setAnnualRent] = useState(600000);
-  const [pension, setPension] = useState(0);
-  const [otherDeductions, setOtherDeductions] = useState(0);
+  const [monthlySalary, setMonthlySalary] = useState<string | number>(350000);
+  const [sideIncomeAnnual, setSideIncomeAnnual] = useState<string | number>(
+    300000
+  );
+  const [annualRent, setAnnualRent] = useState<string | number>(600000);
+  const [pension, setPension] = useState<string | number>(0);
+  const [otherDeductions, setOtherDeductions] = useState<string | number>(0);
 
   // Initialize AOS
   useEffect(() => {
@@ -27,12 +29,18 @@ export default function Page() {
     }).format(Math.round(n));
 
   const results = useMemo(() => {
-    const annualSalary = monthlySalary * 12;
-    const totalIncome = annualSalary + Number(sideIncomeAnnual || 0);
+    // Convert all inputs to numbers (empty string → 0)
+    const salaryNum = Number(monthlySalary) || 0;
+    const sideIncomeNum = Number(sideIncomeAnnual) || 0;
+    const rentNum = Number(annualRent) || 0;
+    const pensionNum = Number(pension) || 0;
+    const otherDeductionsNum = Number(otherDeductions) || 0;
 
-    const rentRelief = Math.min(500000, 0.2 * Number(annualRent || 0));
-    const totalDeductions =
-      Number(pension || 0) + Number(otherDeductions || 0) + rentRelief;
+    const annualSalary = salaryNum * 12;
+    const totalIncome = annualSalary + sideIncomeNum;
+
+    const rentRelief = Math.min(500000, 0.2 * rentNum);
+    const totalDeductions = pensionNum + otherDeductionsNum + rentRelief;
 
     let taxableIncome = totalIncome - totalDeductions;
     if (taxableIncome < 0) taxableIncome = 0;
@@ -47,7 +55,14 @@ export default function Page() {
     ];
 
     let remaining = taxableIncome;
-    const bandBreakdown = [];
+    const bandBreakdown: {
+      index: number;
+      lowerBound: number;
+      cap: number;
+      amount: number;
+      rate: number;
+      tax: number;
+    }[] = [];
     let lowerBound = 0;
 
     for (let i = 0; i < bands.length; i++) {
@@ -113,7 +128,7 @@ export default function Page() {
               <input
                 type="number"
                 value={monthlySalary}
-                onChange={(e) => setMonthlySalary(Number(e.target.value))}
+                onChange={(e) => setMonthlySalary(e.target.value)}
                 className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
               />
             </label>
