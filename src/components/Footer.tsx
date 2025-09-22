@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Right side */}
         <div className="flex space-x-4">
           <Link
-            href="https://wa.me/?text=Check%20out%20TaxEase%20Nigeria's%20free%20tax%20calculator%20https://taxease.ng"
+            href="https://wa.me/?text=Check%20out%20TaxEase%20Nigeria's%20free%20tax%20calculator%20https://penless.co"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-900"
