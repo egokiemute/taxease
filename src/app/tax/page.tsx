@@ -37,11 +37,12 @@ export default function Page() {
     if (taxableIncome < 0) taxableIncome = 0;
 
     const bands = [
-      { cap: 800000, rate: 0 },
-      { cap: 2400000, rate: 0.07 },
-      { cap: 2800000, rate: 0.11 },
-      { cap: 2800000, rate: 0.15 },
-      { cap: Infinity, rate: 0.25 },
+      { cap: 800000, rate: 0 }, // ₦0 – ₦800k = 0%
+      { cap: 2200000, rate: 0.15 }, // next ₦2.2M (₦800k – ₦3M) = 15%
+      { cap: 9000000, rate: 0.18 }, // next ₦9M (₦3M – ₦12M) = 18%
+      { cap: 13000000, rate: 0.21 }, // next ₦13M (₦12M – ₦25M) = 21%
+      { cap: 25000000, rate: 0.23 }, // next ₦25M (₦25M – ₦50M) = 23%
+      { cap: Infinity, rate: 0.25 }, // above ₦50M = 25%
     ];
 
     let remaining = taxableIncome;
@@ -129,7 +130,9 @@ export default function Page() {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-xs text-gray-700">Annual Rent Paid (₦)</span>
+              <span className="text-xs text-gray-700">
+                Annual Rent Paid (₦)
+              </span>
               <input
                 type="number"
                 value={annualRent}
@@ -212,11 +215,15 @@ export default function Page() {
                 </div>
                 <div className="flex justify-between">
                   <span>Net Income (annual)</span>
-                  <span className="font-semibold">{fmt(results.netAnnual)}</span>
+                  <span className="font-semibold">
+                    {fmt(results.netAnnual)}
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Net Income (monthly)</span>
-                  <span className="font-semibold">{fmt(results.netMonthly)}</span>
+                  <span className="font-semibold">
+                    {fmt(results.netMonthly)}
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Net Tax (monthly)</span>
@@ -264,8 +271,8 @@ export default function Page() {
             data-aos-delay="400"
           >
             <div className="text-xs text-gray-500 text-center">
-              Assumptions: rates & bands based on Nigeria 2026 tax reform. Use as
-              a guide — confirm with a tax advisor.
+              Assumptions: rates & bands based on Nigeria 2026 tax reform. Use
+              as a guide — confirm with a tax advisor.
             </div>
             <button
               onClick={() => {

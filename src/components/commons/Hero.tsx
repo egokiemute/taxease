@@ -49,8 +49,8 @@ export default function Hero() {
 
       {/* CTA */}
       <Link
-        href="/calculate"
-        className="mt-6 px-5 py-3 bg-[#1877F2] text-black border-[#1877F2] border-[1px] rounded-full text-sm font-medium"
+        href="/tax"
+        className="mt-6 px-5 py-3 bg-[#1877F2] text-white border-[#1877F2] border-[1px] rounded-full text-sm font-medium"
         data-aos="zoom-in"
         data-aos-delay="300"
       >
