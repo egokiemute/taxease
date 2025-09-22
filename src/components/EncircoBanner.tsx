@@ -25,7 +25,7 @@ const EncircoBanner = () => {
             target="_blank"
             className="flex items-center gap-2 w-fit rounded-full font-semibold px-8 py-4 bg-white text-[#1877F2] hover:bg-gray-100"
           >
-            Book a demo
+            Start Your Registration
             <MoveRight size={16} />
           </Link>
         </div>

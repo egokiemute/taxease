@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-600">
         {/* Left side */}
         <p className="mb-4 sm:mb-0">
-          © {new Date().getFullYear()} TaxEase. All rights reserved.
+          © {new Date().getFullYear()} Penless. All rights reserved.
         </p>
 
         {/* Right side */}
