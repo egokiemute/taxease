@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Features from "@/components/Features";
 import WhyItMatters from "@/components/WhyItMatters";
 import Footer from "@/components/Footer";
+import EncircoBanner from "@/components/EncircoBanner";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Features />
       <WhyItMatters />
+      <EncircoBanner />
       <Footer />
     </>
   );

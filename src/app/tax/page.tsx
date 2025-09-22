@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import React, { useMemo, useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import EncircoBanner from "@/components/EncircoBanner";
 
 export default function Page() {
   const [monthlySalary, setMonthlySalary] = useState(350000);
@@ -297,6 +298,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <EncircoBanner />
       <Footer />
     </>
   );
