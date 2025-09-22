@@ -106,7 +106,7 @@ export default function Page() {
       <Header />
       <div className="content-container pt-10 pb-20">
         <div
-          className="max-w-3xl mx-auto p-6 bg-white rounded-2xl border border-[#1877F2] mt-12 shadow-sm"
+          className="max-w-3xl mx-auto p-6 bg-white rounded-2xl border border-[#0D6EFD] mt-12 shadow-sm font-sans"
           data-aos="fade-up"
         >
           <h1 className="text-2xl font-semibold mb-4 text-gray-900">
@@ -129,7 +129,7 @@ export default function Page() {
                 type="number"
                 value={monthlySalary}
                 onChange={(e) => setMonthlySalary(e.target.value)}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#0D6EFD] outline-none"
               />
             </label>
 
@@ -141,7 +141,7 @@ export default function Page() {
                 type="number"
                 value={sideIncomeAnnual}
                 onChange={(e) => setSideIncomeAnnual(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#0D6EFD] outline-none"
               />
             </label>
 
@@ -153,7 +153,7 @@ export default function Page() {
                 type="number"
                 value={annualRent}
                 onChange={(e) => setAnnualRent(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#0D6EFD] outline-none"
               />
             </label>
 
@@ -165,7 +165,7 @@ export default function Page() {
                 type="number"
                 value={pension}
                 onChange={(e) => setPension(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#0D6EFD] outline-none"
               />
             </label>
 
@@ -177,7 +177,7 @@ export default function Page() {
                 type="number"
                 value={otherDeductions}
                 onChange={(e) => setOtherDeductions(Number(e.target.value))}
-                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#1877F2] outline-none"
+                className="mt-1 p-2 rounded border focus:ring-2 focus:ring-[#0D6EFD] outline-none"
               />
             </label>
           </div>
@@ -306,7 +306,7 @@ export default function Page() {
                 navigator.clipboard.writeText(csv);
                 alert("Summary copied to clipboard (CSV)");
               }}
-              className="px-4 py-2 bg-[#1877F2] text-white text-sm rounded-full shadow hover:bg-[#2e940b] transition"
+              className="px-4 py-2 bg-[#0D6EFD] text-white text-sm rounded-full shadow hover:bg-[#3d77cd] transition"
             >
               Copy summary (CSV)
             </button>

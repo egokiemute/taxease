@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +23,8 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="px-3 py-2  text-md text-[#1877F2] font-semibold"
         >
-          Penless.co
+          <Image src="/logo.png" alt="Penless" width={120} height={40} />
         </Link>
 
         {/* Desktop Nav */}
@@ -33,23 +33,28 @@ const Header = () => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-2 bg-white border-[1px] border-[#1877F2] rounded-full text-xs font-medium"
+            className="px-3 py-2 bg-white border-[1px] border-[#0D6EFD] rounded-full text-xs font-medium"
           >
             Share with Friends
           </Link>
-          {/* <Link
-            href="https://github.com/egokiemute"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 py-2 bg-[#1877F2] text-white border-[#1877F2] border-[1px] rounded-full text-xs font-medium"
-          >
-            Built by Okiemute
-          </Link> */}
+
+          {/* For Businesses Button with Superscript */}
+          <div className="relative inline-block">
+            <button
+              disabled={true}
+              className="px-3 py-2 bg-[#5174a1] text-white border-[#5174a1] border-[1px] rounded-full text-xs font-medium"
+            >
+              For businesses
+            </button>
+            <span className="absolute -top-2 right-0 text-[10px] bg-white rounded-full px-[4px] border-gray-500 text-red-500 font-bold">
+              coming soon
+            </span>
+          </div>
         </div>
 
         {/* Mobile Menu Icon */}
         <button
-          className="sm:hidden p-2 rounded-md border border-[#1877F2]"
+          className="sm:hidden p-2 rounded-md border border-[#0D6EFD]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -67,14 +72,21 @@ const Header = () => {
           >
             Share with Friends
           </Link>
-          <Link
-            href="https://github.com/egokiemute"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block px-3 py-2 bg-[#1877F2] text-black border-[#1877F2] border-[1px] rounded-full text-xs font-medium text-center"
-          >
-            Built by Okiemute
-          </Link>
+
+          {/* For Businesses Button with Superscript */}
+          <div className="text-center w-full mt-4">
+            <div className="relative inline-block">
+              <button
+              disabled={true}
+              className="px-3 py-2 bg-[#5174a1] text-white border-[#5174a1] border-[1px] rounded-full text-xs font-medium"
+            >
+              For businesses
+            </button>
+            <span className="absolute -top-2 right-0 text-[10px] bg-white rounded-full px-[4px] border-gray-500 text-red-500 font-bold">
+              coming soon
+            </span>
+            </div>
+          </div>
         </div>
       )}
     </header>

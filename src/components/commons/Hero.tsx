@@ -14,32 +14,32 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="py-20 pt-32 flex flex-col items-center justify-center text-center">
+    <section className="py-20 pt-32 flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
       {/* Badge */}
-      <div
-        className="flex items-center gap-2 bg-[#1877F2] rounded-full px-4 py-2 w-fit"
+      {/* <div
+        className="flex items-center gap-2 bg-[#0D6EFD] rounded-full px-4 py-2 w-fit"
         data-aos="fade-down"
       >
         <span className="flex items-center justify-center bg-[#000000] text-white px-2 py-0.5 text-xs rounded-full">
           New
         </span>
-        <p className="font-twk text-sm font-medium text-[#000]">
+        <p className="font-twk text-sm font-medium text-[#fff]">
           Tax Calculation
         </p>
-      </div>
+      </div> */}
 
       {/* Heading */}
       <h1
-        className="text-4xl md:text-6xl font-twk font-medium leading-[110%] text-black mt-2"
+        className="text-4xl md:text-6xl font-serif font-medium leading-[110%] text-black mt-2"
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        Know Your Real Take-Home Pay Under Nigeria&apos;s 2026 Tax Reform
+        Understand exactly what you owe, not what you&apos;re told.
       </h1>
 
       {/* Subtext */}
       <p
-        className="text-base md:text-[16.54px] leading-[161%] font-twk text-[#6F6F6F] max-w-3xl mt-5"
+        className="text-base font-sans md:text-[16.54px] leading-[161%] font-twk text-[#6F6F6F] max-w-3xl mt-5"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -50,7 +50,7 @@ export default function Hero() {
       {/* CTA */}
       <Link
         href="/tax"
-        className="mt-6 px-5 py-3 bg-[#1877F2] text-white border-[#1877F2] border-[1px] rounded-full text-sm font-medium"
+        className="mt-6 px-5 py-3 bg-[#0D6EFD] text-white border-[#0D6EFD] border-[1px] rounded-full text-sm font-sans font-medium"
         data-aos="zoom-in"
         data-aos-delay="300"
       >

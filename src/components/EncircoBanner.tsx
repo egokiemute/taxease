@@ -6,15 +6,15 @@ import Link from "next/link";
 const EncircoBanner = () => {
   return (
     <section className="mx-auto">
-      <div className="px-4 md:px-10 py-10 bg-[#1877F2] container relative rounded-2xl grid md:grid-cols-2 gap-12 items-center overflow-hidden">
+      <div className="px-4 md:px-10 py-10 bg-[#0D6EFD] container relative rounded-2xl grid md:grid-cols-2 gap-12 items-center overflow-hidden">
         {/* Left side text */}
         <div className="text-white space-y-6">
-          <h2 className="text-2xl font-sans font-bold leading-snug">
+          <h2 className="text-2xl font-serif font-bold leading-snug">
             Register your business with Encirco now.
             <br />
             Let&apos;s change that.
           </h2>
-          <p className="text-[16.5px] text-white/90">
+          <p className="text-[16.5px] font-sans text-white/90">
             Get your business registered, with SCUML, CAC, and more, all in one
             place. Fast, easy, and hassle-free.
           </p>
@@ -23,7 +23,7 @@ const EncircoBanner = () => {
             type="button"
             href="https://wa.me/+2349137487869"
             target="_blank"
-            className="flex items-center gap-2 w-fit rounded-full font-semibold px-8 py-4 bg-white text-[#1877F2] hover:bg-gray-100"
+            className="flex font-sans items-center gap-2 w-fit rounded-full font-semibold px-8 py-4 bg-white text-[#0D6EFD] hover:bg-gray-100"
           >
             Start Your Registration
             <MoveRight size={16} />

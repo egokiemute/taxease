@@ -33,7 +33,7 @@ export default function WhyItMatters() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-gray-900 sm:text-4xl"
+          className="text-3xl font-serif font-bold text-gray-900 sm:text-4xl"
         >
           Why This Matters
         </motion.h2>
@@ -43,7 +43,7 @@ export default function WhyItMatters() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-4 text-lg text-gray-600 leading-relaxed"
+          className="mt-4 font-sans text-lg text-gray-600 leading-relaxed"
         >
           Nigeria&apos;s <span className="font-semibold">2026 Tax Reform</span> is
           changing the way personal income tax is calculated. For many
@@ -61,10 +61,10 @@ export default function WhyItMatters() {
               viewport={{ once: true }}
               className="p-6 border border-gray-200 rounded-xl hover:shadow-sm transition"
             >
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="font-serif text-lg font-semibold text-gray-900">
                 {item.title}
               </h3>
-              <p className="mt-2 text-gray-600 text-sm">{item.description}</p>
+              <p className="mt-2 font-sans text-gray-600 text-sm">{item.description}</p>
             </motion.div>
           ))}
         </div>

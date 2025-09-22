@@ -12,9 +12,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Nigeria 2026 Tax Calculator | Estimate Your Income Tax & Net Pay",
+  title: "Penless.co | Estimate Your Income Tax & Net Pay",
   description:
-    "Free Nigeria 2026 tax calculator. Instantly estimate your income tax, deductions, and net salary. Stay informed with the latest tax reform updates.",
+    "Understand exactly what you owe, not what you’re told. Stay informed with the latest tax reform updates.",
   keywords: [
     "Nigeria tax calculator 2026",
     "Nigeria income tax",
@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} font-sans antialiased`}>
+      <body className={`${dmSans.variable} font-twk antialiased`}>
         <Container>{children}</Container>
         <Analytics />
       </body>
