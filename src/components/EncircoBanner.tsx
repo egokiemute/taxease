@@ -21,7 +21,7 @@ const EncircoBanner = () => {
 
           <Link
             type="button"
-            href="https://www.encirco.co"
+            href="https://wa.me/+2349137487869"
             target="_blank"
             className="flex items-center gap-2 w-fit rounded-full font-semibold px-8 py-4 bg-white text-[#1877F2] hover:bg-gray-100"
           >
