@@ -18,26 +18,26 @@ export const metadata: Metadata = {
   keywords: [
     "Nigeria tax calculator 2026",
     "Nigeria income tax",
-    "Nigeria tax reform 2025",
+    "Nigeria tax reform 2026",
     "salary calculator Nigeria",
     "net pay calculator Nigeria",
     "income deductions Nigeria",
   ],
   authors: [{ name: "Okiemute Egokiphovwen" }],
-  creator: "SightStudio",
+  creator: "Okiemute Egokiphovwen",
   publisher: "South Circle",
   openGraph: {
-    title: "Nigeria 2025 Tax Calculator | Estimate Your Income Tax & Net Pay",
+    title: "Nigeria 2026 Tax Calculator | Estimate Your Income Tax & Net Pay",
     description:
-      "Easily calculate your income tax in Nigeria for 2025. Enter your salary and side income to see your estimated tax and take-home pay.",
-    url: "https://southcircle.cc/", // replace with your real domain
+      "Easily calculate your income tax in Nigeria for 2026. Enter your salary and side income to see your estimated tax and take-home pay.",
+    url: "https://penless.co/", // replace with your real domain
     siteName: "Nigeria Tax Calculator",
     images: [
       {
         url: "/thumbnail.png", // replace with your OG image
         width: 1200,
         height: 630,
-        alt: "Nigeria 2025 Tax Calculator",
+        alt: "Nigeria 2026 Tax Calculator",
       },
     ],
     locale: "en_NG",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nigeria 2025 Tax Calculator | Estimate Your Income Tax & Net Pay",
+    title: "Nigeria 2026 Tax Calculator | Estimate Your Income Tax & Net Pay",
     description:
       "Free Nigeria 2026 tax calculator to estimate your income tax, deductions, and net salary instantly.",
     images: ["/thumbnail.png"], // replace with your OG image
@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+  canonical: "https://penless.co/",
+},
 };
 
 export default function RootLayout({
