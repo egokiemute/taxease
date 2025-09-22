@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Nigeria Tax Calculator",
     images: [
       {
-        url: "https://southcircle.cc/", // replace with your OG image
+        url: "/thumbnail.png", // replace with your OG image
         width: 1200,
         height: 630,
         alt: "Nigeria 2025 Tax Calculator",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Nigeria 2025 Tax Calculator | Estimate Your Income Tax & Net Pay",
     description:
       "Free Nigeria 2026 tax calculator to estimate your income tax, deductions, and net salary instantly.",
-    images: ["https://southcircle.cc/"], // replace with your OG image
+    images: ["/thumbnail.png"], // replace with your OG image
     creator: "@egokiemute", // replace with your Twitter handle
   },
   robots: {
