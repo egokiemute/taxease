@@ -27,9 +27,9 @@ export default function Footer() {
             href="https://southcircle.cc"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#0D6EFD] transition"
+            className="hover:text-[#0D6EFD] hover:underline transition"
           >
-            A tool of South Circle
+            Built by southcircle.cc
           </Link>
         </div>
       </div>
